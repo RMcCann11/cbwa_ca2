@@ -30,3 +30,9 @@ As per [tutorialspoint] (https://www.tutorialspoint.com/nodejs/nodejs_npm.htm), 
 As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), in order to utilise ionic we have to install it globally using the -g flag.
 
 *** 
+### Downloading and installing app dependencies: ###
+As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), in order to run our app we have to download and install all of it's required dependencies.
+
+As per [stackchief] (https://www.stackchief.com/tutorials/npm%20install%20%7C%20how%20it%20work), "when run without arguments, npm install downloads dependencies defined in a package.json file and generates a node_modules folder with the installed modules."
+
+***

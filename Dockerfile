@@ -12,3 +12,6 @@ WORKDIR /app/mobdev_ca3-main
 
 # Installing ionic through npm
 RUN npm install -g ionic
+
+# Downloading and installing app dependencies
+RUN npm install
