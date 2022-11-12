@@ -27,3 +27,6 @@ EXPOSE 80
 
 # Removing the entire content of the /usr/share/nginx/html folder
 RUN rm -rf /usr/share/nginx/html/*
+
+# Copying my app files into /usr/share/nginx/html
+COPY --from=build /app/mobdev_ca3-main/www/ /usr/share/nginx/html/

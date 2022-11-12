@@ -39,7 +39,6 @@ As per [stackchief] (https://www.stackchief.com/tutorials/npm%20install%20%7C%20
 
 ***
 ### Building our application for deployment: ###
-
 As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), this command is using the Angular build command. Furthermore, as per [ionicframework] (https://ionicframework.com/docs/cli/commands/build), the ionic build command will compile an ionic app through the use of the Angular CLI.
 
 As per [thinkster] (https://thinkster.io/tutorials/angular-cli-basics-ng-build), the Angular build command is used to build and deploy an application and when compiling an app into a production environment the --prod flag should be used
@@ -48,7 +47,6 @@ As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), th
 
 ***
 ### Fetching a web server to serve our app: ###
-
 As per fetching the latest version of Node as a base image, the docker FROM command can be used to retrieve a base image from Docker Hub. In this case we are retrieving an Nginx image.
 
 As per [nginx] (https://www.nginx.com/resources/glossary/nginx/),  nginx is open source software designed for web serving.
@@ -59,7 +57,11 @@ As per [java4coding] (https://www.java4coding.com/contents/docker/docker-volume-
 
 *** 
 ### Removing the entire content of the /usr/share/nginx/html folder: ###
-
 As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), our app will be served from the '/usr/share/nginx/html' folder. 
 
 As per retrieving the content of my app from GitHub, we can use the rm command to delete files. Furthermore as per [geeksforgeeks] (https://www.geeksforgeeks.org/rm-rf-command-in-linux-with-examples/#:~:text=When%20you%20combine%20the%20%2Dr,contents)%20without%20prompting%20for%20confirmation.), "when you combine the -r and -f flags, it means that you recursively and forcibly remove a directory (and its contents) without prompting for confirmation".
+
+### Copying our project files to the /usr/share/nginx/html folder: ###
+As per [educba] (https://www.educba.com/docker-copy-command/), the docker COPY command can be used to copy files or folders. Furthermore, as per [stackoverflow] (https://stackoverflow.com/questions/66353510/what-is-from-used-in-copy-command-in-dockerfile#:~:text=%22You%20can%20use%20the%20COPY,copies%20the%20artifact%20from%20there.%22), we can use the --from flag to copy from a seperate image, in our case build.
+
+As per changing working directory to '/app/mobdev_ca3-main', the project files were placed in /app/mobdev_ca2-main when we downloaded them from GitHub and as per building our application for deployment, the command 'npm run build --prod' appended /www to this path hence we are copying '/app/mobdev_ca2-main/www/' to the folder from which our app will be served namely '/usr/share/nginx/html/'.
