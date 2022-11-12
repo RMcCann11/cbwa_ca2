@@ -52,3 +52,7 @@ As per fetching the latest version of Node as a base image, the docker FROM comm
 As per [nginx] (https://www.nginx.com/resources/glossary/nginx/),  nginx is open source software designed for web serving.
 
 ***
+### Exposing container port 80: ###
+As per [java4coding] (https://www.java4coding.com/contents/docker/docker-volume-expose-command#DockerExpose), the docker EXPOSE command is used to expose a container's port to the outside world.
+
+***

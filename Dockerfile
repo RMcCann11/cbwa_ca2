@@ -21,3 +21,6 @@ RUN npm run build --prod
 
 # Fetching a web server to serve our app
 FROM nginx:alpine
+
+# Exposing container port 80
+EXPOSE 80
