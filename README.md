@@ -18,6 +18,8 @@ As per [java4coding] (https://www.java4coding.com/contents/docker/docker-workdir
 ### Retrieving the content of my app from GitHub: ###
 As per [linuxize] (https://linuxize.com/post/wget-command-examples/), the wget command can be used to download files through the command line using the HTTP protocol. In this case, an archive will be received which as per [linuxize] (https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/), can be unarchived using the tar command. The flag '-x' denotes the extraction option and the name of the archive should follow the 'f' flag. 
 
+As per [geeksforgeeks] (https://www.geeksforgeeks.org/rm-command-linux-examples/), we can use the rm command to delete files, in this case the downloaded archive.
+
 As per in [java4coding] (https://www.java4coding.com/contents/docker/docker-run-command), the docker RUN command can be used to execute Linux commands from a terminal.
 
 ***
@@ -55,4 +57,9 @@ As per [nginx] (https://www.nginx.com/resources/glossary/nginx/),  nginx is open
 ### Exposing container port 80: ###
 As per [java4coding] (https://www.java4coding.com/contents/docker/docker-volume-expose-command#DockerExpose), the docker EXPOSE command is used to expose a container's port to the outside world.
 
-***
+*** 
+### Removing the entire content of the /usr/share/nginx/html folder: ###
+
+As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), our app will be served from the '/usr/share/nginx/html' folder. 
+
+As per retrieving the content of my app from GitHub, we can use the rm command to delete files. Furthermore as per [geeksforgeeks] (https://www.geeksforgeeks.org/rm-rf-command-in-linux-with-examples/#:~:text=When%20you%20combine%20the%20%2Dr,contents)%20without%20prompting%20for%20confirmation.), "when you combine the -r and -f flags, it means that you recursively and forcibly remove a directory (and its contents) without prompting for confirmation".

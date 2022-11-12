@@ -24,3 +24,6 @@ FROM nginx:alpine
 
 # Exposing container port 80
 EXPOSE 80
+
+# Removing the entire content of the /usr/share/nginx/html folder
+RUN rm -rf /usr/share/nginx/html/*
