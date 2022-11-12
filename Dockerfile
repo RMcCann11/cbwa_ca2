@@ -18,3 +18,6 @@ RUN npm install
 
 # Building our application for deployment
 RUN npm run build --prod
+
+# Fetching a web server to serve our app
+FROM nginx:alpine

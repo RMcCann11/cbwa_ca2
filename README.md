@@ -42,5 +42,13 @@ As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), th
 
 As per [thinkster] (https://thinkster.io/tutorials/angular-cli-basics-ng-build), the Angular build command is used to build and deploy an application and when compiling an app into a production environment the --prod flag should be used
 
-AS per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), this command also creates "a www folder of our project".
+As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), this command also creates "a www folder of our project".
+
+***
+### Fetching a web server to serve our app: ###
+
+As per fetching the latest version of Node as a base image, the docker FROM command can be used to retrieve a base image from Docker Hub. In this case we are retrieving an Nginx image.
+
+As per [nginx] (https://www.nginx.com/resources/glossary/nginx/),  nginx is open source software designed for web serving.
+
 ***
