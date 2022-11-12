@@ -15,3 +15,6 @@ RUN npm install -g ionic
 
 # Downloading and installing app dependencies
 RUN npm install
+
+# Building our application for deployment
+RUN npm run build --prod

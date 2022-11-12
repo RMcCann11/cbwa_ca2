@@ -36,3 +36,11 @@ As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), in
 As per [stackchief] (https://www.stackchief.com/tutorials/npm%20install%20%7C%20how%20it%20work), "when run without arguments, npm install downloads dependencies defined in a package.json file and generates a node_modules folder with the installed modules."
 
 ***
+### Building our application for deployment: ###
+
+As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), this command is using the Angular build command. Furthermore, as per [ionicframework] (https://ionicframework.com/docs/cli/commands/build), the ionic build command will compile an ionic app through the use of the Angular CLI.
+
+As per [thinkster] (https://thinkster.io/tutorials/angular-cli-basics-ng-build), the Angular build command is used to build and deploy an application and when compiling an app into a production environment the --prod flag should be used
+
+AS per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), this command also creates "a www folder of our project".
+***
