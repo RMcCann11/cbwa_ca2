@@ -9,3 +9,6 @@ RUN wget https://github.com/RMcCann11/mobdev_ca3/archive/main.tar.gz && tar xf m
 
 # Changing working directory to /app/mobdev_ca3-main
 WORKDIR /app/mobdev_ca3-main
+
+# Installing ionic through npm
+RUN npm install -g ionic

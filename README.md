@@ -23,3 +23,10 @@ As per in [java4coding] (https://www.java4coding.com/contents/docker/docker-run-
 ***
 ### Changing working directory to /app/mobdev_ca3-main: ###
 As per Changing working directory to /app, using the docker WORKDIR command we can navigate to /app/mobdev_ca3-main as the files required to build and serve our app our present in this location.
+
+### Installing ionic through npm: ###
+As per [tutorialspoint] (https://www.tutorialspoint.com/nodejs/nodejs_npm.htm), npm packages can be installed using the syntax "npm install <PackageName>"
+
+As per [knoldus] (https://blog.knoldus.com/deployment-with-docker-in-ionic/), in order to utilise ionic we have to install it globally using the -g flag.
+
+*** 
