@@ -21,3 +21,5 @@ As per [linuxize] (https://linuxize.com/post/wget-command-examples/), the wget c
 As per in [java4coding] (https://www.java4coding.com/contents/docker/docker-run-command), the docker RUN command can be used to execute Linux commands from a terminal.
 
 ***
+### Changing working directory to /app/mobdev_ca3-main: ###
+As per Changing working directory to /app, using the docker WORKDIR command we can navigate to /app/mobdev_ca3-main as the files required to build and serve our app our present in this location.
