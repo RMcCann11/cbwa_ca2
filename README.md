@@ -68,3 +68,9 @@ As per retrieving the content of my app from GitHub, we can use the rm command t
 As per [educba] (https://www.educba.com/docker-copy-command/), the docker COPY command can be used to copy files or folders. Furthermore, as per [stackoverflow] (https://stackoverflow.com/questions/66353510/what-is-from-used-in-copy-command-in-dockerfile#:~:text=%22You%20can%20use%20the%20COPY,copies%20the%20artifact%20from%20there.%22), we can use the --from flag to copy from a seperate image, in our case build.
 
 As per changing working directory to '/app/mobdev_ca3-main', the project files were placed in /app/mobdev_ca2-main when we downloaded them from GitHub and as per building our application for deployment, the command 'npm run build --prod' appended /www to this path hence we are copying '/app/mobdev_ca2-main/www/' to the folder from which our app will be served namely '/usr/share/nginx/html/'.
+
+***
+### Building an image from a Dockerfile ###
+As per [java4coding] (https://www.java4coding.com/contents/docker/docker-build), the docker build command is used to build a docker image from a Dockerfile which provides instructions on how to do so. Furthermore the full command to build an image is docker build -t <imagename> .
+
+In order to use the Dockerfile contained within this project please navigate to the directory in which you have placed the source code contained in the repo and issue the command 'docker build -t myApp .'
