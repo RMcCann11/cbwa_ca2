@@ -73,14 +73,14 @@ As per changing working directory to '/app/mobdev_ca3-main', the project files w
 ### Building an image from a Dockerfile: ###
 As per [java4coding] (https://www.java4coding.com/contents/docker/docker-build), the docker build command is used to build a docker image from a Dockerfile which provides instructions on how to do so. Furthermore the full command to build an image is docker build -t <imagename> .
 
-In order to use the Dockerfile contained within this project please navigate to the directory in which you have placed the source code contained in the repo and issue the command 'docker build -t myApp .'
+In order to use the Dockerfile contained within this project please navigate to the directory in which you have placed the Dockerfile and issue the command 'docker build -t myapp .'
 
 ***
 ### Running an instance of the image: ###
-As per [java4coding] (https://www.java4coding.com/contents/docker/docker-run), the docker run command can be used to run an instance of the image. Furthermore "the docker run command must specify an IMAGE to derive the container from", in this case 'myApp'.
+As per [java4coding] (https://www.java4coding.com/contents/docker/docker-run), the docker run command can be used to run an instance of the image. Furthermore "the docker run command must specify an IMAGE to derive the container from", in this case 'myapp'.
 
-In order to run an instance of the image you have created please issue the following command 'docker run -it --rm -p 8080:80 myApp'. Furthermore as per  [dockerDocumentation] (https://docs.docker.com/engine/reference/commandline/run/), the -it flag will keep STDIN open thereby allowing you to interact with the container, the --rm flag will "automatically remove the container when it exits" and the -p 8080:80 flag will map the local machine's port 8080 to the container's port 80.
+In order to run an instance of the image you have created please issue the following command 'docker run -it --rm -p 8080:80 myapp'. Furthermore as per  [dockerDocumentation] (https://docs.docker.com/engine/reference/commandline/run/), the -it flag will keep STDIN open thereby allowing you to interact with the container, the --rm flag will "automatically remove the container when it exits" and the -p 8080:80 flag will map the local machine's port 8080 to the container's port 80.
 
 ***
-### Accessing myApp: ###
+### Accessing myapp: ###
 To view my app, please open a browser and type 'localhost:8080' into the address bar.
